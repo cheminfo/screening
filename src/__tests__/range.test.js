@@ -1,8 +1,8 @@
-import { describe, expect, it } from 'vitest';
+import { expect, test } from 'vitest';
 
 import { Plate } from '../plate.js';
 
-describe('Test range', () => {
+test('range', () => {
   let plate = new Plate();
   let wells = plate.wells;
   for (let i = 0; i < wells.length; i = i + 2) {
@@ -16,7 +16,5 @@ describe('Test range', () => {
     if (well.selected) selected++;
   }
 
-  it('ccheck selected', () => {
-    expect(selected).toBe(11);
-  });
+  expect(selected).toBe(11);
 });

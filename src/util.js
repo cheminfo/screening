@@ -25,7 +25,7 @@ export function stringToNumber(string) {
   let number = 0;
   for (let i = 0; i < string.length; i++) {
     number *= 26;
-    number += string.charCodeAt(i) - 64;
+    number += string.codePointAt(i) - 64;
   }
   return number;
 }
@@ -33,7 +33,7 @@ export function stringToNumber(string) {
 export function numberToString(number) {
   let string = '';
   while (number !== 0) {
-    string = String.fromCharCode(((number - 1) % 26) + 65) + string;
+    string = String.fromCodePoint(((number - 1) % 26) + 65) + string;
     number = Math.floor((number - 1) / 26);
   }
   return string;
