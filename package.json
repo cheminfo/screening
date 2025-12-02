@@ -11,7 +11,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "npm run tsc && cheminfo-build --entry src/index.js --root Screening",
+    "build": "npm run tsc && cheminfo-build --entry lib/index.js --root Screening",
     "check-types": "tsc --noEmit",
     "clean": "rimraf coverage lib",
     "eslint": "eslint src",
