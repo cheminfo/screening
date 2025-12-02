@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Generate iconNMR text file 1`] = `
+"USER nmrsu
+HOLDER 1
+NO_SUBMIT
+NAME ABC
+TITLE project: ABC\\nbatch: 4CADA006
+EXPNO 1
+SOLVENT urine
+EXPERIMENT N PROF_URINE_NOESY
+EXPNO 2
+SOLVENT urine
+EXPERIMENT N PROF_URINE_JRES
+
+USER nmrsu
+HOLDER 2
+NO_SUBMIT
+NAME ABC
+TITLE project: ABC\\nbatch: 4Cham010
+EXPNO 1
+SOLVENT urine
+EXPERIMENT N PROF_URINE_NOESY
+EXPNO 2
+SOLVENT urine
+EXPERIMENT N PROF_URINE_JRES
+"
+`;

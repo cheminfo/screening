@@ -1,10 +1,10 @@
 import { expect, test } from 'vitest';
 
-import { Plate } from '../plate.js';
+import { Plate } from '../plate.ts';
 
 test('range', () => {
-  let plate = new Plate();
-  let wells = plate.wells;
+  const plate = new Plate();
+  const wells = plate.wells;
   for (let i = 0; i < wells.length; i = i + 2) {
     wells[i].info = { reference: i };
   }

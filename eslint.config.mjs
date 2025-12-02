@@ -1,19 +1,4 @@
-import cheminfo from 'eslint-config-cheminfo';
-import globals from 'globals';
+import { defineConfig, globalIgnores } from 'eslint/config';
+import ts from 'eslint-config-cheminfo-typescript';
 
-export default [
-  ...cheminfo,
-  {
-    languageOptions: {
-      globals: {
-        ...globals.node,
-      },
-    },
-    rules: {
-      'unicorn/prefer-structured-clone': 'off', // we need JSON.parse(JSON.stringify(reagents)) to get rid of visualizer hacks
-      'unicorn/no-array-push-push': 'off',
-      "unicorn/prefer-single-call": "off",
-      "unicorn/no-immediate-mutation": "off",
-    },
-  },
-];
+export default defineConfig(globalIgnores(['coverage', 'lib']), ts);

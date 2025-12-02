@@ -1,0 +1,36 @@
+[
+  {
+    "user": "nmrsu",
+    "name": "ABC",
+    "title": "project: ABC\\nbatch: 4CADA006",
+    "holder": 1,
+    "experiments": [
+      {
+        "experiment": "N PROF_URINE_NOESY",
+        "solvent": "urine"
+      },
+      {
+        "experiment": "N PROF_URINE_JRES",
+        "solvent": "urine"
+      }
+    ]
+  },
+  {
+    "user": "nmrsu",
+    "name": "ABC",
+    "title": "project: ABC\\nbatch: 4Cham010",
+    "holder": 2,
+    "experiments": [
+      {
+        "experiment": "N PROF_URINE_NOESY",
+        "solvent": "urine",
+        "parameters": []
+      },
+      {
+        "experiment": "N PROF_URINE_JRES",
+        "solvent": "urine",
+        "parameters": []
+      }
+    ]
+  }
+]
