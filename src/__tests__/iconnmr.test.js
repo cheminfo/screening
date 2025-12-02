@@ -1,7 +1,9 @@
-import { readFileSync } from 'fs';
-import { join } from 'path';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 
-import { generateFile } from '../iconnmr';
+import { describe, expect, it } from 'vitest';
+
+import { generateFile } from '../iconnmr.js';
 
 describe('ICONNmr', () => {
   it('generateFile', () => {

@@ -1,11 +1,11 @@
-import { positionToNumber, numberToPosition } from './util.js';
+import { numberToPosition, positionToNumber } from './util.js';
 
 /**
  * Class dealing with plates
  * @param {object} [options={}]
- * @param {number} [options.width=12] width of the plate
- * @param {number} [options.height=options.width/3*2] height of the plase
- * @param {number} [options.size=options.width*options.height] size of the plate
+ * @param {number} [options.width=12] - width of the plate
+ * @param {number} [options.height=options.width/3*2] - height of the plase
+ * @param {number} [options.size=options.width*options.height] - size of the plate
  */
 export class Plate {
   constructor(options = {}) {
@@ -21,9 +21,9 @@ export class Plate {
 
   select(range) {
     if (range) {
-      this.wells.forEach(function (well) {
+      for (const well of this.wells) {
         well.selected = false;
-      });
+      }
       let reg = /(\d+)(-(\d+))?,?/g;
       let m;
       while ((m = reg.exec(range))) {
@@ -40,13 +40,13 @@ export class Plate {
         }
       }
     } else {
-      this.wells.forEach(function (well) {
+      for (const well of this.wells) {
         if (isEmpty(well.info)) {
           well.selected = false;
         } else {
           well.selected = true;
         }
-      });
+      }
     }
   }
 
@@ -55,7 +55,7 @@ export class Plate {
   }
 
   updateColor() {
-    this.wells.forEach(function (well) {
+    for (const well of this.wells) {
       if (isEmpty(well.info)) {
         well.color = 'white';
       } else if (well.selected) {
@@ -63,7 +63,7 @@ export class Plate {
       } else {
         well.info.color = 'rgba(144, 238, 144, 0.3)';
       }
-    });
+    }
   }
 
   getByPosition(position) {

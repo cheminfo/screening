@@ -2,12 +2,12 @@ import { positionToNumber } from './util.js';
 
 /**
  *
- * @param {array} requests
+ * @param {Array} requests
  * @param {object} [options={}]
  * @param {string} [optios.eol='\r\n']
- * @param {string} [optios.plateNumber=1] position of the plate
- * @param {string} [optios.deleteExistingHolder=false] flag specifying if existing experiments should be deleted
- * @param {string} [optios.autosubmit=false] submit automatically
+ * @param {string} [optios.plateNumber=1] - position of the plate
+ * @param {string} [optios.deleteExistingHolder=false] - flag specifying if existing experiments should be deleted
+ * @param {string} [optios.autosubmit=false] - submit automatically
  */
 export function generateFile(requests, options = {}) {
   const EOL = options.eol || '\r\n';

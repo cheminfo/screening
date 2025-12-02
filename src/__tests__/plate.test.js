@@ -1,7 +1,10 @@
-import { Plate } from '../plate';
+import { describe, expect, it } from 'vitest';
+
+import { Plate } from '../plate.js';
 
 describe('Test plate 2 x 3', () => {
   let plate = new Plate({ height: 2, width: 3 });
+
   it('check 6 wells plate', () => {
     expect(plate.wells).toHaveLength(6);
     expect(plate.size).toBe(6);

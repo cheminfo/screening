@@ -1,3 +1,3 @@
-export * from './plate';
-export * from './iconnmr';
-export * from './util';
+export * from './plate.js';
+export * from './iconnmr.js';
+export * from './util.js';

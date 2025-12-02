@@ -3,9 +3,9 @@
  */
 export function positionToNumber(position, width) {
   if (width === undefined) {
-    throw Error('need to specify width for numberToPosition');
+    throw new Error('need to specify width for numberToPosition');
   }
-  position = position.toUpperCase().replace(/[^0-9A-Z]/g, '');
+  position = position.toUpperCase().replaceAll(/[^0-9A-Z]/g, '');
   let string = position.replace(/[0-9]+/, '');
   let number = position.replace(/[A-Z]+/, '');
   return (stringToNumber(string) - 1) * width + number * 1;
@@ -13,7 +13,7 @@ export function positionToNumber(position, width) {
 
 export function numberToPosition(number, width) {
   if (width === undefined) {
-    throw Error('need to specify width for numberToPosition');
+    throw new Error('need to specify width for numberToPosition');
   }
   number--;
   return (
