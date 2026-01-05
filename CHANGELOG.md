@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/cheminfo/screening/compare/v2.0.0...v2.1.0) (2026-01-05)
+
+
+### Features
+
+* publish package on npm ([18eab7c](https://github.com/cheminfo/screening/commit/18eab7ca95ab51731a4a286b10b5635546324116))
+
 ## [2.0.0](https://github.com/cheminfo/screening/compare/v1.0.2...v2.0.0) (2025-12-02)
 
 
