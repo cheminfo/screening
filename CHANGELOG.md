@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/cheminfo/screening/compare/v2.1.0...v2.1.1) (2026-01-05)
+
+
+### Bug Fixes
+
+* npm token for publication ([4f71a1f](https://github.com/cheminfo/screening/commit/4f71a1f5232e80494f0d3651a1a375cce53620d5))
+
 ## [2.1.0](https://github.com/cheminfo/screening/compare/v2.0.0...v2.1.0) (2026-01-05)
 
 
