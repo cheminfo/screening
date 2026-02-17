@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/cheminfo/screening/compare/v2.1.1...v2.1.2) (2026-02-17)
+
+
+### Bug Fixes
+
+* reorder experiment output in generateIconNMRFile function ([935e653](https://github.com/cheminfo/screening/commit/935e653bba3a502e07d7bc6baf5a17439bd0c76c))
+
 ## [2.1.1](https://github.com/cheminfo/screening/compare/v2.1.0...v2.1.1) (2026-01-05)
 
 
