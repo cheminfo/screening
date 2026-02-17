@@ -49,7 +49,6 @@ export function generateIconNMRFile(
       textFile.push(
         `EXPNO ${experimentNumber++}`,
         `SOLVENT ${experiment.solvent}`,
-        `EXPERIMENT ${experiment.experiment}`,
       );
       if (experiment.parameters && experiment.parameters.length > 0) {
         const parameters = [];
@@ -58,6 +57,7 @@ export function generateIconNMRFile(
         }
         textFile.push(`PARAMETERS ${parameters.join(',')}`);
       }
+      textFile.push(`EXPERIMENT ${experiment.experiment}`);
     }
     textFile.push('');
   }
